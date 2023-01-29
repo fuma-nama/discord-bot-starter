@@ -4,6 +4,7 @@ specifiers:
   '@prisma/client': ^4.9.0
   discord-fp: ^0.2.1
   discord.js: ^14.7.1
+  dotenv: ^16.0.3
   prisma: ^4.9.0
   tsx: ^3.12.2
   typescript: ^4.9.4
@@ -12,6 +13,7 @@ dependencies:
   '@prisma/client': 4.9.0_prisma@4.9.0
   discord-fp: 0.2.1_discord.js@14.7.1
   discord.js: 14.7.1
+  dotenv: 16.0.3
 
 devDependencies:
   prisma: 4.9.0
@@ -192,6 +194,11 @@ packages:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+    dev: false
+
+  /dotenv/16.0.3:
+    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+    engines: {node: '>=12'}
     dev: false
 
   /esbuild-android-64/0.15.18:

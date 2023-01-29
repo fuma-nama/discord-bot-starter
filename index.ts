@@ -2,7 +2,10 @@ import { Client, GatewayIntentBits } from "discord.js";
 import { start } from "discord-fp";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import "dotenv/config";
 
+//store your token in environment variable or put it here
+const token = process.env["TOKEN"];
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 function resolveDirs(...names: string[]): string[] {
@@ -18,6 +21,4 @@ client.on("ready", () => {
     });
 });
 
-client.login(
-    "OTA3OTU1NzgxOTcyOTE4Mjgz.G5fhpd.MPXULt_RT7YE9FMIfuu_JNRZu4z2FQh1UuPitQ"
-);
+client.login(token);
