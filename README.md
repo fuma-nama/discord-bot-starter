@@ -16,7 +16,7 @@ Modern Discord bot starter pack with **Typescript** and **Discord.js**
 
 ### Init
 
-We are using pnpm at default
+We are using **pnpm** by default
 
 `pnpm install`
 
@@ -34,3 +34,13 @@ Edit your `.env` file for configure bot token & Database url
 | ./commands | All application commands       |
 | .env       | Environment Variables          |
 | ./prisma   | Prisma folder                  |
+
+## Run the Project
+
+### Watch Mode
+
+`pnpm run dev`
+
+### Run without watch
+
+`pnpm run start`
