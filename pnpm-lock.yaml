@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@prisma/client': ^4.9.0
-  discord-fp: ^0.2.1
+  discord-fp: ^1.0.1
   discord.js: ^14.7.1
   dotenv: ^16.0.3
   prisma: ^4.9.0
@@ -11,7 +11,7 @@ specifiers:
 
 dependencies:
   '@prisma/client': 4.9.0_prisma@4.9.0
-  discord-fp: 0.2.1_discord.js@14.7.1
+  discord-fp: 1.0.1_discord.js@14.7.1
   discord.js: 14.7.1
   dotenv: 16.0.3
 
@@ -166,8 +166,8 @@ packages:
     resolution: {integrity: sha512-OPqoPq71MYEIK4asZJJWFOdG5f3wN/yPySlM0ivwSRiV3XpTzpa5S8y5Ujo59WiKx7ADDEsUA560/VgrBuvwjQ==}
     dev: false
 
-  /discord-fp/0.2.1_discord.js@14.7.1:
-    resolution: {integrity: sha512-iKLnS5KFjvG3j75FvJo/D1P9ZzPzxktM+hHj7k+xcawACiTUps5HYXwoWc3oaxgn14sro85QfNwFbnnWyfAc3A==}
+  /discord-fp/1.0.1_discord.js@14.7.1:
+    resolution: {integrity: sha512-la7ERVaw1E7+egezfWoYLvL73+bXXF07OWgl2OO05tx68PlunShaTRiq0nm1PDGsVet8eWmUCSXRnSqfXbNP+Q==}
     peerDependencies:
       discord.js: 14.x
     dependencies:
