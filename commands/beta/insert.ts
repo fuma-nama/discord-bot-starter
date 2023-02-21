@@ -18,7 +18,7 @@ export default safe.slash({
         });
 
         await event.reply(
-            `Inserted data: ${result.value} (${result.id}) (ctx: ${ctx})`
+            `Inserted data: ${result.value} (${result.id}) (ctx: ${ctx.message})`
         );
     },
 });
