@@ -1,5 +1,5 @@
-import { group } from "discord-fp";
+import { safe } from "../_meta.js";
 
-export default group({
+export default safe.group({
     description: "Beta features",
 });

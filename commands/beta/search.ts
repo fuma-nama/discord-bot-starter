@@ -1,7 +1,8 @@
 import { prisma } from "@/prisma/client.js";
-import { options, slash } from "discord-fp";
+import { options } from "discord-fp";
+import { safe } from "../_meta.js";
 
-export default slash({
+export default safe.slash({
     description: "Query text",
     options: {
         query: options.string({
@@ -37,7 +38,9 @@ export default slash({
                 return v?.username;
             }),
     },
-    execute: async ({ event, options }) => {
-        await event.reply(`Query: ${options.query} by ${options.user}`);
+    execute: async ({ event, options, ctx }) => {
+        await event.reply(
+            `Query: ${options.query} by ${options.user} (ctx: ${ctx.message})`
+        );
     },
 });

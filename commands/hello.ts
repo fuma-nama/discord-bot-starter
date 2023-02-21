@@ -1,6 +1,7 @@
-import { options, slash } from "discord-fp";
+import { options } from "discord-fp";
+import { base } from "./_meta.js";
 
-export default slash({
+export default base.slash({
     description: "Say Hello to you",
     options: {
         name: options
