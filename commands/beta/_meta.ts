@@ -1,5 +1,5 @@
-import { safe } from "../_meta.js";
+import { protectedCommands } from "../_meta.js";
 
-export default safe.group({
+export default protectedCommands.group({
     description: "Beta features",
 });

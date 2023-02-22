@@ -1,8 +1,8 @@
 import { prisma } from "@/prisma/client.js";
 import { options } from "discord-fp";
-import { safe } from "../_meta.js";
+import { protectedCommands } from "../_meta.js";
 
-export default safe.slash({
+export default protectedCommands.slash({
     description: "Insert data",
     options: {
         value: options.string({
