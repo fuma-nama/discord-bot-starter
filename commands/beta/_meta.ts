@@ -1,5 +1,5 @@
-import { protectedCommands } from "../_meta.js";
+import { protectedCommand } from "@/utils/dfp.js";
 
-export default protectedCommands.group({
+export default protectedCommand.group({
     description: "Beta features",
 });
