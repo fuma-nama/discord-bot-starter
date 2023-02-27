@@ -1,7 +1,7 @@
+import { command } from "@/utils/dfp.js";
 import { options } from "discord-fp";
-import { base } from "./_meta.js";
 
-export default base.slash({
+export default command.slash({
     description: "Say Hello to you",
     options: {
         name: options

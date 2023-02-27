@@ -1,8 +1,8 @@
-import { prisma } from "@/prisma/client.js";
+import { protectedCommand } from "@/utils/dfp.js";
+import { prisma } from "@/utils/prisma.js";
 import { options } from "discord-fp";
-import { protectedCommands } from "../_meta.js";
 
-export default protectedCommands.slash({
+export default protectedCommand.slash({
     description: "Query text",
     options: {
         query: options.string({
