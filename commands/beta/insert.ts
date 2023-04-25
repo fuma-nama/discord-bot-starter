@@ -1,6 +1,6 @@
 import { protectedCommand } from "@/utils/dfp.js";
 import { prisma } from "@/utils/prisma.js";
-import { options } from "discord-fp";
+import { options } from "@discord-fp/djs";
 
 export default protectedCommand.slash({
     description: "Insert data",

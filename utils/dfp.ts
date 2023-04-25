@@ -1,9 +1,6 @@
-import { initDiscordFP } from "discord-fp";
-import { client } from "./discord.js";
+import { initDiscordFP } from "@discord-fp/djs";
 
-export const dfp = initDiscordFP({
-    client,
-});
+export const dfp = initDiscordFP();
 
 export const command = dfp.command;
 

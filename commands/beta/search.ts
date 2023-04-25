@@ -1,6 +1,6 @@
 import { protectedCommand } from "@/utils/dfp.js";
 import { prisma } from "@/utils/prisma.js";
-import { options } from "discord-fp";
+import { options } from "@discord-fp/djs";
 
 export default protectedCommand.slash({
     description: "Query text",
@@ -35,7 +35,7 @@ export default protectedCommand.slash({
                 required: false,
             })
             .transform((v) => {
-                return v?.username;
+                return v?.value?.username;
             }),
     },
     execute: async ({ event, options, ctx }) => {
